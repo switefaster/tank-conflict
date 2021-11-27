@@ -1,0 +1,25 @@
+[package]
+name = "tank-conflict"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+wgpu = "0.11.0"
+winit = "0.25.0"
+anyhow = "1.0.45"
+log = "0.4.14"
+env_logger = "0.9.0"
+pollster = "0.2.4"
+bytemuck = { version = "1.7.2", features = ["derive"] }
+cgmath = "0.18.0"
+crossbeam = "0.8.1"
+rapier2d = { version = "0.11.1", features = ["simd-stable", "parallel"] }
+retain_mut = "0.1.4"
+image = "0.23.14"
+uuid = { version = "0.8.2", features = ["v4", "serde"] }
+message-io = { version = "0.14", default-features = false, features = ["tcp"] }
+tank-conflict-server = { path = "../tank-conflict-server" }
+argh = "0.1.6"
+serde_json = "1.0.71"

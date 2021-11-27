@@ -1,0 +1,5 @@
+[workspace]
+members = ["tank-conflict", "tank-conflict-server"]
+
+[profile.release]
+lto = "fat"
